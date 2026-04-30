@@ -6,7 +6,7 @@ import { HiOutlineLightBulb, HiStar } from "react-icons/hi";
 const PopularCard = async () => {
     
     
-    const res = await fetch('https://assignment-08-sun-shop.vercel.app/data.json');
+    const res = await fetch('http://localhost:3000/data.json');
     const popularProducts = await res.json();
 
     return (

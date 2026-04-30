@@ -5,7 +5,7 @@ import { HiOutlineArrowLeft, HiOutlineShoppingBag, HiStar } from "react-icons/hi
 
 const DetailsPage = async ({ params }) => {
     const { id } = await params;
-    const res = await fetch("https://assignment-08-sun-shop.vercel.app/data.json");
+    const res = await fetch("http://localhost:3000/data.json");
     const AllProducts = await res.json();
     const product = AllProducts.find(p => p.id == id);
     
